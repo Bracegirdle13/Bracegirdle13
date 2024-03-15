@@ -1,0 +1,28 @@
+apple - 64,25,14,12,53,18,75,74,40,57,28,76,63,40,93,22,27,72,35,76,75,48,97,19,9,51,86,81,23,39,85,45,55,74,12,33,29,38,29,45,78,27,79,31,97,38,38,17,15,20,17,78,51,60,65,22,19,93,57,93,15,71
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+26 / 39
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+kiwi + kiwi
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const greet = name => `Hello, ${name}!`;
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getUniqueValues = array => [...new Set(array)];
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+banana
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+23 / 16,89,86,8,38,5,74,34,89,40,41,71,64,76,24,10,16,53,96,86,70,36,4,8,16,42,68,92,85,52,34,80,28,32,87,46,64,58,3,1
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+78,43,14,28,85,27,14,36,17,48,59,26,5,75,18,67,56,73,12,19,6,30,70,89,24,88,27,10,19,80,47,9,44 + false
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+66,39,59,4,28 / false
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
